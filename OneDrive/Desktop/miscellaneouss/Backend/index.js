@@ -13,7 +13,7 @@ app.get("/register",(req,res)=>{
 });
 
 app.post("/register",(req,res)=>{
-    let {user,password}=req.query;
+    let {user,password}=req.body;
     res.send("standard post request");
 });
 
